@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-around;
 	margin: 0 auto;
-	max-width: 1024px;
+	width: 1024px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	/* border: 1px dotted grey; */
