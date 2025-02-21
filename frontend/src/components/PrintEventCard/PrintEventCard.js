@@ -4,29 +4,13 @@ import LocationMark from '../LocationMark/LocationMark'
 import PrintButton from '../Buttons/PrintButton/PrintButton'
 import ShareButton from '../Buttons/ShareButton/ShareButton'
 import { React, useRef } from 'react'
-import * as htmlToImage from 'html-to-image';
 import ModalImage from "react-modal-image"
 import { useDispatch, useSelector } from 'react-redux'
 import DeleteButton from '../Buttons/DeleteButton/DeleteButton'
 import { deleteEvent } from '../../redux/eventsToPrint/actionCreators'
+import html2canvas from 'html2canvas';
 
-function PrintEventCard(props) {
-	const { eventIdToPrint,
-		eventTitleToPrint,
-		eventDataToPrint,
-		eventLocationToPrint,
-		officialDistanceToPrint,
-		officialFinishTimeToPrint,
-		eventPaceToPrint,
-		eventTrackToPrint,
-		medalPictureToPrint,
-		bibPictureToPrint,
-		eventPicture1ToPrint,
-		eventPicture2ToPrint,
-		eventPicture3ToPrint,
-		eventCommentsToPrint,
-	} = props
-
+function PrintEventCard() {
 	// Redux store
 	const events = useSelector((state) => state.events)
 	const dispatch = useDispatch()
@@ -39,14 +23,14 @@ function PrintEventCard(props) {
 	// Print JPG
 	const domEl = useRef();
 	const downloadImage = async () => {
-		const dataUrl = await htmlToImage.toPng(domEl.current);
+		const canvas = await html2canvas(domEl.current);
+		const dataUrl = canvas.toDataURL('image/png');
 		const link = document.createElement('a');
-		link.download = 'html-to-img.png';
+		link.download = 'your-event.png';
 		link.href = dataUrl;
 		link.click();
 	};
 	// Print JPG end
-
 
 	return (
 		<div className='print-event-card-wrapper'>
