@@ -1,0 +1,15 @@
+.print-button {
+	background-color: whitesmoke;
+	font-size: 20px;
+	padding: 20px 30px;
+	border: 1px solid #2975A7;
+	font-weight: 700;
+	color: #2975A7;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.print-button:hover,
+.print-button:active {
+	opacity: 0.5;
+	cursor: pointer;
+}

@@ -1,0 +1,85 @@
+.main-head {
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	max-width: 1024px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/* border: 1px dotted grey; */
+	position: relative;
+}
+
+.user-welcome {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.user-welcome-words {
+	align-self: flex-start;
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+.user-welcome-words h3 {
+	margin-top: 20px;
+	font-weight: 100;
+}
+
+.user-name span {
+	color: #2975A7;
+}
+
+.user-picture {
+	width: 220px;
+}
+
+.user-statistics {
+	margin-right: 0;
+	margin-top: 20px;
+}
+
+.user-statistics h2 {
+	font-size: 30px;
+}
+
+.user-statistics-count {
+	font-size: 30px;
+	color: #2975A7;
+}
+
+.user-statistics-list {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.user-statistics-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 32px;
+}
+
+.user-statistics-item-title {
+	min-width: 30%;
+	text-align: start;
+}
+
+.user-statistics-item-best-time {
+	min-width: 30%;
+	text-align: end;
+	color: #2975A7;
+}
+
+.main-head-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+	font-size: 35px;
+	font-weight: 100;
+	color: #2975A7;
+	margin-top: 10px;
+}

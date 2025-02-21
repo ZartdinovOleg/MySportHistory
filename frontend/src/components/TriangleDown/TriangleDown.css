@@ -1,0 +1,13 @@
+.triangle-down {
+	position: absolute;
+	bottom: 0;
+	color: #2975a7;
+	font-weight: 100;
+	left: 50%;
+	right: 50%;
+	margin-bottom: -50px;
+}
+
+.triangle-down svg {
+	transform: translate(-50%, 0);
+}

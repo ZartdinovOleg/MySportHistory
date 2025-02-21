@@ -1,0 +1,61 @@
+.event-table {
+	background-color: whitesmoke;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 1024px;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.event-table span {
+	font-size: 20px;
+	margin: 20px;
+	text-align: right;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+
+table th,
+table td {
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+	background-color: whitesmoke;
+}
+
+table tr:hover {
+	background-color: #59bcde;
+}
+
+table th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	background-color: #2975A7;
+	color: white;
+}
+
+.share-and-print-table-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: 20px;
+	/* margin-bottom: -45px; */
+
+}
+
+.sport-events-table-title {
+	font-size: 50px;
+	margin-top: -10px;
+	margin-bottom: 40px;
+}

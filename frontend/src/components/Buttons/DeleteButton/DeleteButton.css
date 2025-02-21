@@ -1,0 +1,15 @@
+.delete-button {
+	background-color: whitesmoke;
+	font-size: 20px;
+	padding: 20px 30px;
+	border: 1px solid red;
+	font-weight: 700;
+	color: red;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.delete-button:hover,
+.delete-button:active {
+	opacity: 0.5;
+	cursor: pointer;
+}

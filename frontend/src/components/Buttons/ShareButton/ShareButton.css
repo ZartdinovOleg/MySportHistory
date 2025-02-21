@@ -1,0 +1,15 @@
+.share-button {
+	background-color: whitesmoke;
+	font-size: 20px;
+	padding: 20px 30px;
+	border: 1px solid #2975A7;
+	font-weight: 700;
+	color: #2975A7;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.share-button:hover,
+.share-button:active {
+	opacity: 0.5;
+	cursor: pointer;
+}

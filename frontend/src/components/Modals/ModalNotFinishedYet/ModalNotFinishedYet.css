@@ -1,0 +1,40 @@
+.modal-not-finished-yet {
+	width: 700px;
+	height: 320px;
+	margin: 200px auto;
+	background-color: whitesmoke;
+	border: 1px dotted #2975a7;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.modal-not-finished-yet-button {
+	border: none;
+}
+
+.modal-not-finished-yet-button:hover {
+	background: whitesmoke;
+}
+
+.modal-not-finished-yet-text {
+	font-size: 32px;
+	padding: 40px;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.modal-not-finished-yet-close-button {
+	background-color: whitesmoke;
+	font-size: 20px;
+	padding: 20px 30px;
+	border: 1px solid #2975A7;
+	font-weight: 700;
+	color: #2975A7;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin-left: 300px;
+}
+
+.modal-not-finished-yet-close-button:hover,
+.modal-not-finished-yet-close-button:active {
+	opacity: 0.5;
+	cursor: pointer;
+}
