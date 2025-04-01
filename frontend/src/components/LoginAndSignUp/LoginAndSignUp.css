@@ -1,10 +1,12 @@
 .login-and-sign-up {
-	color: #2975A7;
-	font-weight: 700;
-	font-size: 25px;
+	font-family: 'Manrope';
+	color: #333333;
+	font-weight: 600;
+	font-size: 24px;
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
+	line-height: 100%;
 }
 
 .login-and-sign-up a:hover {

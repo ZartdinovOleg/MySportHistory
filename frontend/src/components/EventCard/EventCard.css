@@ -1,119 +1,167 @@
 .event-card-wrapper {
-	margin: 20px auto;
+	margin: 0px auto;
 	width: 1024px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 40px;
 }
 
 .sportevent-card {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
-	min-height: 100vh;
-	width: 1022px;
+	width: 1024px;
 	margin: 20px auto;
-	border: 1px dashed #2975A7;
-	margin-bottom: 40px;
+	/* border: 1px dashed #2975A7; */
+	margin-bottom: 0px;
+}
+
+.sportevent-card-information {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	gap: 10px
 }
 
 .id-data-distance-location-wrapper {
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-	color: #2975A7;
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: 700;
-	margin-right: 20px;
-	margin-left: 20px;
-	margin-top: 10px;
+	height: 133px;
+	width: 742px;
+	border: 3px solid #333333;
+	box-shadow: 8px 8px #5BC0EB;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
 }
 
 .id-data-distance-wrapper {
 	display: flex;
 	flex-direction: row;
-	gap: 20px;
+	color: #333333;
+	font-family: 'Manrope';
+	font-size: 14px;
+	font-weight: 500;
+	column-gap: 40px;
 }
 
 .event-title {
-	font-size: 40px;
-	color: #2975A7;
+	font-family: 'Oswald';
+	font-size: 36px;
+	color: #333333;
 	text-align: left;
+}
+
+.event-title-data-distance-location-wrapper {
+	display: flex;
+	flex-direction: column;
 	margin-left: 20px;
 }
 
 .event-time-pace-wrapper {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	flex-direction: row;
-	margin-left: 20px;
+	align-items: center;
 	font-size: 32px;
-	gap: 40px;
+	width: 253px;
+	gap: 32px;
+	border: 3px solid #333333;
+	box-shadow: 8px 8px #5BC0EB;
 }
 
-.event-time-pace-wrapper span {
-	color: #2975A7;
+.event-finish-time-block,
+.event-event-pace-block {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
 }
+
+.event-finish-time,
+.event-event-pace {
+	font-family: 'Oswald';
+	font-weight: 700;
+	color: #333333;
+	font-style: 32px;
+	margin-bottom: -5px;
+}
+
+.event-finish-time-title,
+.event-event-pace-title {
+	font-family: 'Manrope';
+	font-weight: 500;
+	color: #333333;
+	font-size: 18px;
+}
+
 
 .event-pictures-wrap {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	gap: 10px;
-}
-
-.event-pictures-block-1 {
-	display: flex;
-	flex-direction: column;
-}
-
-.event-pictures-block-2 {
-	display: flex;
-	flex-direction: column;
-}
-
-.event-pictures-block-3 {
-	display: flex;
-	flex-direction: column;
-	margin-top: -110px;
-}
-
-.event-pictures-wrap p {
-	font-size: 32px;
-	margin-bottom: 10px;
-}
-
-.event-picture,
-.event-track-picture {
-	max-width: 330px;
-	width: 100%;
+	padding-right: 5px;
 	margin-bottom: 20px;
 }
 
-.event-medal-picture,
-.event-bib-picture {
-	max-width: 270px;
-	width: 100%;
+.event-pictures-list4 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	column-gap: 20px;
+	row-gap: 20px;
+}
+
+.event-pictures-list4 .event-picture {
+	width: 40%;
+	height: 260px;
+	overflow: hidden;
+}
+
+.event-pictures-list6 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 22px;
+}
+
+.event-pictures-list6 .event-picture {
+	height: 210px;
+	width: 318px;
+	overflow: hidden;
+}
+
+.event-picture {
+	list-style: none;
+	border: 3px solid #333333;
+	box-shadow: 8px 8px #5BC0EB;
+}
+
+.event-picture-small4 img {
+	object-fit: cover;
 }
 
 .event-id {
-	width: 32px;
-	height: 32px;
-	border: 2px solid #2975A7;
-	color: #2975A7;
+	width: 62px;
+	height: 62px;
+	border: 3px solid #333333;
+	color: #333333;
 	font-weight: 700;
-	font-size: 25px;
+	font-size: 36px;
+	font-family: 'Oswald';
+	margin-left: 32px;
 }
 
 .event-comments {
-	margin-bottom: 10px;
-	margin-right: 20px;
-	margin-left: 20px;
-	font-size: 32px;
-}
-
-.event-comments span {
-	color: #2975A7;
+	border: 3px solid #333333;
+	box-shadow: 8px 8px #5BC0EB;
+	font-family: 'Manrope';
+	font-size: 16px;
+	color: #333333;
+	width: 1012px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .share-and-print-buttons {

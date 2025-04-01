@@ -1,12 +1,18 @@
+.welcome-page-wrapper {
+	background-image: url('http://localhost:3000/images/welcome-background.png');
+	background-position: top;
+}
+
 .welcome-page {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
-	min-height: 100vh;
+	justify-content: center;
+	max-height: 100vh;
+	height: 840px;
 	width: 1024px;
 	margin: 0 auto;
-	/* border: 1px dashed grey; */
 	position: relative;
+	/* border: 1px dotted gray; */
 }
 
 .welcome-page-login {
@@ -18,13 +24,18 @@
 }
 
 .welcome-page-header {
-	font-size: 32px;
-	font-weight: 100;
-	line-height: 45px;
+	font-size: 96px;
+	font-weight: 700;
+	line-height: 110px;
+	color: #333;
+	margin-bottom: 24px;
 }
 
-.welcome-page-header span {
-	color: #2975A7;
+.welcome-page-description {
+	font-family: 'Manrope';
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
 }
 
 .welcome-page-buttons-invite-wrapper {

@@ -1,12 +1,12 @@
 .table-button {
-	background-color: whitesmoke;
-	max-width: 150px;
-	font-size: 20px;
-	padding: 10px 20px;
-	border: 1px solid #2975A7;
-	font-weight: 700;
-	color: #2975A7;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-color: #333333;
+	font-size: 16px;
+	padding: 22px 56px;
+	border: 1px solid #5BC0EB;
+	box-shadow: 8px 8px #5BC0EB;
+	font-weight: 600;
+	color: #ffffff;
+	font-family: 'Manrope'
 }
 
 .table-button:hover,

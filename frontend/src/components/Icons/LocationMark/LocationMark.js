@@ -1,10 +1,10 @@
 import './LocationMark.css'
-import { IoLocation } from "react-icons/io5";
+import { CiLocationOn } from "react-icons/ci";
 
 function LocationMark() {
 	return (
 		<div className='location-mark'>
-			<IoLocation />
+			<CiLocationOn />
 		</div>
 	)
 }

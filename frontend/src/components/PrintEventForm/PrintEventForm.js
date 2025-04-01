@@ -1,5 +1,5 @@
 import './PrintEventForm.css'
-import BigTriangleDown from '../BigTriangleDown/BigTriangleDown'
+import BigTriangleDown from '../Icons/BigTriangleDown/BigTriangleDown'
 import { useDispatch } from 'react-redux'
 import { useState } from 'react'
 import { addEvent } from '../../redux/eventsToPrint/actionCreators'

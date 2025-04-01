@@ -6,7 +6,7 @@ import { useMemo } from 'react'
 import { GlobalFilterInput } from '../../data/GlobalFilterInput'
 import PrintButton from '../Buttons/PrintButton/PrintButton'
 import ShareButton from '../Buttons/ShareButton/ShareButton'
-import BigTriangleDown from '../BigTriangleDown/BigTriangleDown'
+import BigTriangleDown from '../Icons/BigTriangleDown/BigTriangleDown'
 
 function EventTable() {
 	const columns = useMemo(() => COLUMNS, [])
@@ -56,7 +56,7 @@ function EventTable() {
 				<PrintButton buttonText="Print your event" />
 			</div> */}
 			<div>
-				<BigTriangleDown />
+				{/* <BigTriangleDown /> */}
 				<p className='sport-events-table-title'>More events are coming soon...</p>
 			</div>
 		</div>

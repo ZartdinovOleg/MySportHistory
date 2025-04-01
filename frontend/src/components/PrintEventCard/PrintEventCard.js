@@ -1,6 +1,6 @@
 import './PrintEventCard.css'
-import TriangleDown from '../TriangleDown/TriangleDown'
-import LocationMark from '../LocationMark/LocationMark'
+import TriangleDown from '../Icons/TriangleDown/TriangleDown'
+import LocationMark from '../Icons/LocationMark/LocationMark'
 import PrintButton from '../Buttons/PrintButton/PrintButton'
 import ShareButton from '../Buttons/ShareButton/ShareButton'
 import { React, useRef } from 'react'
