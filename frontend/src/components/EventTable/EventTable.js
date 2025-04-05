@@ -20,10 +20,12 @@ function EventTable() {
 
 	return (
 		<div className='event-table'>
-			<GlobalFilterInput
-				preGlobalFilteredRows={preGlobalFilteredRows}
-				setGlobalFilter={setGlobalFilter} globalFilter={state.globalFilter}
-			/>
+			<div className='table-filter'>
+				<GlobalFilterInput
+					preGlobalFilteredRows={preGlobalFilteredRows}
+					setGlobalFilter={setGlobalFilter} globalFilter={state.globalFilter}
+				/>
+			</div>
 			<table {...getTableProps()}>
 				<thead>
 					{headerGroups.map((headerGroup) => (

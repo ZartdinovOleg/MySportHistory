@@ -1,7 +1,7 @@
 import SportEventsList from '../SportEventsList/SportEventsList'
 import MainHead from '../MainHead/MainHead'
 import WelcomePage from '../WelcomePage/WelcomePage';
-import ScrollToTop from '../ScrollToTop/ScrollToTop';
+import ScrollToTop from '../Buttons/ScrollToTop/ScrollToTop'
 
 function MainPage() {
 	return (

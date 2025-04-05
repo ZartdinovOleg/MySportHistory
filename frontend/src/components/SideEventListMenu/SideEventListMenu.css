@@ -14,7 +14,7 @@
 }
 
 .side-event-list-item {
-	border: 1px solid #2975A7;
+	border: 1px solid #333333;
 	margin-bottom: -1px;
 }
 
@@ -23,9 +23,23 @@
 	opacity: 0.5;
 }
 
-.selected-side-menu-item {
-	background-color: #2975A7;
+.side-event-list-item:active {
+	cursor: pointer;
+	opacity: 0.5;
 	color: white;
+	background: #333333;
+}
+
+.side-event-list-item:focus {
+	cursor: pointer;
+	opacity: 0.5;
+	color: white;
+	background: #333333;
+}
+
+.selected-side-menu-item {
+	background-color: #333333;
+	color: white
 }
 
 a {
@@ -34,5 +48,5 @@ a {
 
 a:visited {
 	text-decoration: none;
-	color: #2975A7;
+	color: #333333;
 }

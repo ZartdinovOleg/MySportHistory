@@ -116,7 +116,7 @@ function PrintEventCard() {
 				</div>
 			)
 			}
-			<TriangleDown />
+			{/* <TriangleDown /> */}
 		</div >
 	)
 }

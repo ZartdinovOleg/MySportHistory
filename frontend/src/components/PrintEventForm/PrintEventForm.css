@@ -1,69 +1,68 @@
 .print-event-form-wrapper {
 	margin: 0 auto;
 	margin-top: 20px;
-	width: 1022px;
-	border: 1px dashed #2975a7;
+	width: 600px;
+	/* border: 1px dashed #2975a7; */
 }
 
 .print-event-form {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 16px;
+	text-align: left;
 }
 
-.print-event-form-columns {
+.print-event-title-wrap,
+.print-event-location-wrap,
+.print-event-comment-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.print-event-form-row-1,
+.print-event-form-row-2 {
+	display: flex;
+	gap: 15px;
+}
+
+.print-event-id-event-distance {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	width: 190px;
+	gap: 7px;
+}
+
+.print-event-time-pace {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	width: 100%;
+}
+
+.print-event-pictures-wrapper {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	text-align: left;
-	margin-top: 20px;
-	gap: 60px;
+	justify-content: space-between
 }
 
-.print-event-form-column-1 {
+.print-event-picture-wrap {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
-	width: 300px;
+	gap: 7px;
 }
 
-.print-event-form-column-2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	gap: 20px;
-	width: 250px;
-}
-
-.print-event-form-column-3 {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	gap: 20px;
-	width: 250px;
-}
 
 input[type='text'] {
-	width: 100%;
-	max-width: 500px;
-	font-size: 16px;
-	color: #2975a7;
+	font-size: 14px;
+	color: #333333;
 	padding: 5px;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: 'Manrope';
+	height: 36px;
 }
 
-input[type='submit'] {
-	max-width: 300px;
-	background-color: whitesmoke;
-	font-size: 20px;
-	padding: 18px 20px;
-	border: 1px solid #2975A7;
-	font-weight: 700;
-	color: #2975A7;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	margin: 0 auto;
-	margin-bottom: 20px;
-}
+input[type='submit'] {}
 
 input[type='submit']:hover {
 	cursor: pointer;
@@ -71,38 +70,38 @@ input[type='submit']:hover {
 }
 
 select {
-	width: 80px;
+	width: 190px;
+	height: 50px;
 }
 
 textarea {
-	width: 100%;
-	max-width: 500px;
-	font-size: 16px;
-	color: #2975a7;
-	padding: 5px;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	width: 566px;
+	font-size: 14px;
+	color: #333333;
+	padding: 15px;
+	font-family: 'Manrope';
 	margin: 0 auto;
-	margin-top: -10px;
+	font-weight: 400;
 }
 
 label {
-	color: #2975a7;
-	font-size: 20px;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	margin-bottom: -10px;
+	color: #333333;
+	font-size: 14px;
+	font-family: 'Manrope';
 }
 
 .submit-print-button {
-	background-color: whitesmoke;
-	font-size: 20px;
+	width: 598px;
+	background-color: #333333;
+	font-size: 16px;
+	border: 1px solid #5BC0EB;
+	box-shadow: 8px 8px #5BC0EB;
+	font-weight: 600;
+	color: #ffffff;
+	font-family: 'Manrope';
 	padding: 20px 30px;
-	border: 1px solid #2975A7;
-	font-weight: 700;
-	color: #2975A7;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	max-width: 270px;
-	margin: 0 auto;
 	margin-bottom: 20px;
+	margin-top: 40px;
 }
 
 .submit-print-button:hover,
@@ -112,10 +111,47 @@ label {
 }
 
 .file-uploader-preview {
-	width: 150px;
+	height: 100px;
+	object-fit: contain;
 }
 
-.print-event-form-column-2 img,
-.print-event-form-column-3 img {
-	width: 150px;
+.print-event-picture-title {
+	font-family: 'Manrope';
+	font-size: 14px;
+	color: #333333;
+}
+
+
+input[type="file"] {
+	width: 100px;
+	display: none;
+}
+
+.print-event-picture-label {
+	border: 1px solid #333333;
+	padding: 5px;
+	text-align: center;
+	width: 140px;
+}
+
+.print-event-picture-label:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+/* input[type="file"]::file-selector-button {
+	border: 1px solid #333333;
+	background: white;
+	padding: 5px;
+	width: 100px;
+}
+
+input[type="file"]::file-selector-button:hover {
+	opacity: 0.5;
+	cursor: pointer;
+} */
+
+.print-event-pictures-column img {
+	max-height: 100px;
+	object-fit: contain;
 }

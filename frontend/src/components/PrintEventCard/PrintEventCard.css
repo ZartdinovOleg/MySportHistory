@@ -120,7 +120,6 @@
 	flex-direction: row;
 	justify-content: flex-end;
 	gap: 20px;
-	margin-bottom: 20px;
 	margin-top: 20px;
 }
 
@@ -136,7 +135,6 @@
 .print-event-page-after-words {
 	font-size: 30px;
 	margin-bottom: 60px;
-
 }
 
 .download-delete-button {

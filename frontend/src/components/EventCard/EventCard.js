@@ -66,10 +66,10 @@ function EventCard(props) {
 				<p className='event-comments'>{eventComments}</p>
 			</li >
 			{/* <TriangleDown /> */}
-			{/* <div className='share-and-print-buttons'>
+			<div className='share-and-print-buttons'>
 				<ShareButton buttonText="Share with friends" />
 				<PrintButton buttonText="Print your event" />
-			</div> */}
+			</div>
 		</div >
 	)
 }

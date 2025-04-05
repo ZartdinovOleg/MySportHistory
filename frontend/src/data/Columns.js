@@ -24,7 +24,7 @@ export const COLUMNS = [
 		accessor: 'officialDistance'
 	},
 	{
-		Header: 'Finish Time',
+		Header: 'Time',
 		accessor: 'officialFinishTime'
 	},
 	{

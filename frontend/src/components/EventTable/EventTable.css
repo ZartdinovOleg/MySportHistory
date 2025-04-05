@@ -1,11 +1,11 @@
 .event-table {
-	background-color: whitesmoke;
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
 	width: 1024px;
 	margin: 0 auto;
-	font-size: 20px;
+	font-size: 18px;
+	font-family: 'Manrope';
+	font-weight: 400;
 }
 
 .event-table span {
@@ -18,32 +18,66 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
-	border: 1px solid #ddd;
+	border: 1px solid #333333;
 	margin-bottom: 20px;
 }
 
-table th,
+table th {
+	text-align: left;
+	padding: 10px;
+}
+
 table td {
 	text-align: left;
 	padding: 10px;
-	border: 1px solid #ddd;
+	border-bottom: 1px solid #333333;
+	vertical-align: baseline;
 }
 
 table tr:nth-child(even) {
-	background-color: whitesmoke;
+	background-color: white;
 }
 
 table tr:hover {
-	background-color: #59bcde;
+	background-color: #5BC0EB;
 }
 
 table th {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	text-align: center;
-	background-color: #2975A7;
+	text-align: left;
+	background-color: #333333;
 	color: white;
+	font-family: 'Manrope';
+	font-weight: 400;
+	font-size: 18px;
 }
+
+.table-filter {
+	border: 1px solid #333333;
+	margin-bottom: 10px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.search-field {
+	display: flex;
+	gap: 10px;
+}
+
+.search-input {
+	font-family: 'Manrope';
+	font-size: 14px;
+	border: none;
+	height: 20px;
+	margin-top: 5px;
+	padding: 5px;
+	width: 950px;
+}
+
+.search-input:focus {}
 
 .share-and-print-table-buttons {
 	display: flex;

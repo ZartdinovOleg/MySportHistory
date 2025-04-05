@@ -45,9 +45,8 @@ function MainHead() {
 			{/* <TriangleDown /> */}
 		</div >
 		<div className='main-head-buttons'>
-			<Link to='/'><ListButton buttonText="List" /></Link>
-			<GiAllSeeingEye size={70} />
-			<Link to='/table'><TableButton buttonText="Table" /></Link>
+			<Link to='/'><ListButton buttonText="Show as a list" /></Link>
+			<Link to='/table'><TableButton buttonText="Show as a table" /></Link>
 		</div>
 	</>
 	)

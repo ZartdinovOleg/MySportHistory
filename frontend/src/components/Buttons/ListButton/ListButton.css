@@ -1,12 +1,14 @@
 .list-button {
 	background-color: #333333;
 	font-size: 16px;
-	padding: 22px 56px;
+	padding: 22px 93px;
 	border: 1px solid #5BC0EB;
 	box-shadow: 8px 8px #5BC0EB;
 	font-weight: 600;
 	color: #ffffff;
-	font-family: 'Manrope'
+	font-family: 'Manrope';
+	display: flex;
+	gap: 20px;
 }
 
 .list-button:hover,

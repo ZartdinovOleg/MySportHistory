@@ -9,7 +9,7 @@ function SideEventListMenu() {
 
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
-			if (window.scrollY > (1200)) {
+			if (window.scrollY > (1300)) {
 				setShowSideMenu(true);
 			} else {
 				setShowSideMenu(false);

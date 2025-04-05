@@ -4,7 +4,16 @@
 	margin-top: 30px;
 }
 
+.print-event-page-title {
+	font-family: 'Oswald';
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
 
 .print-event-page-welcome-words {
-	font-size: 30px;
+	font-family: 'Manrope';
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 16px;
 }
