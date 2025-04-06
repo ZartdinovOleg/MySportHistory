@@ -10,7 +10,7 @@ function SportEventsListToPrint() {
 					return <PrintEventCard {...sportEventToPrint} key={sportEventToPrint.eventIdToPrint} />
 				})}
 			</ul>
-			<p className='print-sport-events-title'>More events are coming soon...</p>
+			{/* <p className='print-sport-events-title'>More events are coming soon...</p> */}
 		</div>
 	)
 }

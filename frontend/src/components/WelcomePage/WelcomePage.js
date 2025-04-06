@@ -18,7 +18,6 @@ function WelcomePage() {
 				<div className='welcome-page-buttons-invite-wrapper'>
 					<div className='welcome-page-buttons'>
 						{/* <LoginButton buttonText="Login | Sign Up" /> */}
-						{/* <ModalNotFinishedYet /> */}
 						{/* <p>or</p> */}
 						<a href='/printpage'><PrintButton buttonText="Print your event" /></a>
 					</div>

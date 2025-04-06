@@ -2,9 +2,10 @@
 	width: 700px;
 	height: 320px;
 	margin: 200px auto;
-	background-color: whitesmoke;
-	border: 1px dotted #2975a7;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-color: white;
+	border: 1px solid #333333;
+	font-family: 'Manrope';
+	font-weight: 400;
 }
 
 .modal-not-finished-yet-button {
@@ -18,19 +19,21 @@
 .modal-not-finished-yet-text {
 	font-size: 32px;
 	padding: 40px;
-	padding-top: 100px;
+	padding-top: 90px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 
 .modal-not-finished-yet-close-button {
-	background-color: whitesmoke;
-	font-size: 20px;
-	padding: 20px 30px;
-	border: 1px solid #2975A7;
-	font-weight: 700;
-	color: #2975A7;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	margin-left: 300px;
+	background-color: #333333;
+	font-size: 16px;
+	padding: 22px 56px;
+	border: 1px solid #5BC0EB;
+	box-shadow: 8px 8px #5BC0EB;
+	font-weight: 600;
+	color: #ffffff;
+	font-family: 'Manrope';
+	margin-left: 270px;
 }
 
 .modal-not-finished-yet-close-button:hover,

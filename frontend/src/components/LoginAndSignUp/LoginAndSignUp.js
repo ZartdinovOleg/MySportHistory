@@ -1,9 +1,10 @@
 import './LoginAndSignUp.css'
+import ModalNotFinishedYet from '../Modals/ModalNotFinishedYet/ModalNotFinishedYet'
 
 function LoginAndSignUp() {
 	return (
 		<div className='login-and-sign-up'>
-			<a><p>Login</p> </a>| <a><p>Sign Up</p></a>
+			<ModalNotFinishedYet />
 		</div>
 	)
 }

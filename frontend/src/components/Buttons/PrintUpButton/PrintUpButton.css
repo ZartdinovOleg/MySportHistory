@@ -1,0 +1,11 @@
+.print-up-button-icon {
+	height: 50px;
+	width: 50px;
+	color: #333333;
+}
+
+.print-up-button-icon:hover {
+	cursor: pointer;
+	animation: none;
+	opacity: 0.5;
+}

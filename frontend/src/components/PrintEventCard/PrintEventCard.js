@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import DeleteButton from '../Buttons/DeleteButton/DeleteButton'
 import { deleteEvent } from '../../redux/eventsToPrint/actionCreators'
 import html2canvas from 'html2canvas';
+import PrintUpButton from '../Buttons/PrintUpButton/PrintUpButton'
 
 function PrintEventCard() {
 	// Redux store
@@ -36,7 +37,7 @@ function PrintEventCard() {
 		<div className='print-event-card-wrapper'>
 
 			{events.length === 0 ? (
-				<p className='print-event-page-after-words'>Please fill the information about your event above</p>) : (
+				<div className='print-event-page-after-words-wrap'><PrintUpButton /><p className='print-event-page-after-words'>Please fill the information about your event above</p></div>) : (
 				<div>
 
 					<div className='div-to-print' id="domEl" ref={domEl} >
