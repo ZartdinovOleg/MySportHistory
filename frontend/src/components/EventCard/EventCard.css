@@ -21,7 +21,8 @@
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 20px;
-	gap: 10px
+	gap: 10px;
+	background: white;
 }
 
 .id-data-distance-location-wrapper {

@@ -4,16 +4,16 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	margin-top: 40px;
 }
 
 .print-sportevent-card {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
-	min-height: 100vh;
 	width: 1022px;
 	margin: 0 auto;
-	border: 1px dashed #2975A7;
+	background: white;
 }
 
 .print-id-data-distance-location-wrapper {
@@ -58,41 +58,54 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	padding-right: 5px;
+	margin-bottom: 20px;
+
 }
 
 .print-event-pictures-block-1 {
 	display: flex;
 	flex-direction: column;
+	width: 318px;
+	gap: 22px
 }
 
 .print-event-pictures-block-2 {
 	display: flex;
 	flex-direction: column;
+	width: 318px;
+	gap: 22px
 }
 
 .print-event-pictures-block-3 {
 	display: flex;
 	flex-direction: column;
-	margin-top: -110px;
+	width: 318px;
+	gap: 22px
 }
 
 .print-event-pictures-wrap p {
 	font-size: 32px;
-	margin-bottom: 10px;
 }
 
 .print-event-picture,
 .print-event-track-picture {
-	max-width: 270px;
-	width: 100%;
-	margin-bottom: 20px;
+	height: 210px;
+	overflow: hidden;
+	object-fit: cover;
+	border: 3px solid #333333;
+	box-shadow: 8px 8px #5BC0EB;
 }
 
 .print-event-medal-picture,
 .print-event-bib-picture {
-	max-width: 270px;
-	width: 100%;
+	height: 210px;
+	overflow: hidden;
+	object-fit: cover;
+	border: 3px solid #333333;
+	box-shadow: 8px 8px #5BC0EB;
 }
+
 
 .print-event-id {
 	min-width: 32px;
@@ -105,15 +118,18 @@
 }
 
 .print-event-comments {
-	margin-bottom: 10px;
-	margin-right: 20px;
-	margin-left: 20px;
-	font-size: 32px;
+	border: 3px solid #333333;
+	box-shadow: 8px 8px #5BC0EB;
+	font-family: 'Manrope';
+	font-size: 16px;
+	color: #333333;
+	width: 1012px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.print-event-comments span {
-	color: #2975A7;
-}
 
 .print-share-and-print-buttons {
 	display: flex;
@@ -121,11 +137,11 @@
 	justify-content: flex-end;
 	gap: 20px;
 	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 .div-to-print {
 	margin: 0 auto;
-	background: whitesmoke;
 }
 
 .download-image-button {

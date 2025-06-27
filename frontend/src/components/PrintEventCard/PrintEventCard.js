@@ -3,6 +3,8 @@ import TriangleDown from '../Icons/TriangleDown/TriangleDown'
 import LocationMark from '../Icons/LocationMark/LocationMark'
 import PrintButton from '../Buttons/PrintButton/PrintButton'
 import ShareButton from '../Buttons/ShareButton/ShareButton'
+import RunningIcon from '../Icons/RunningIcon/RunningIcon'
+import CalendarIcon from '../Icons/CalendarIcon/CalendarIcon'
 import { React, useRef } from 'react'
 import ModalImage from "react-modal-image"
 import { useDispatch, useSelector } from 'react-redux'
@@ -42,22 +44,32 @@ function PrintEventCard() {
 
 					<div className='div-to-print' id="domEl" ref={domEl} >
 						<li className='print-sportevent-card'>
-							<div className='print-id-data-distance-location-wrapper'>
-								<div className='print-id-data-distance-wrapper'>
-									<p className='print-event-id'>{events[0].printForm.eventId}</p>
-									<p className='print-event-data'>{events[0].printForm.eventData}</p>
-									<p className='print-event-distance'>{`${events[0].printForm.eventDistance}km`}</p>
+
+							<div className='sportevent-card-information'>
+								<div className='id-data-distance-location-wrapper'>
+									<p className='event-id'>{events[0].printForm.eventId}</p>
+									<div className='event-title-data-distance-location-wrapper'>
+										<h2 className='event-title'>{events[0].printForm.eventTitle}</h2>
+										<div className='id-data-distance-wrapper'>
+											<p className='event-data'><CalendarIcon />{events[0].printForm.eventData}</p>
+											<p className='event-location'><LocationMark />{events[0].printForm.eventLocation}</p>
+											<p className='event-distance'><RunningIcon />{`${events[0].printForm.eventDistance}}km`}</p>
+										</div>
+									</div>
 								</div>
-								<p className='print-event-location'><LocationMark />{events[0].printForm.eventLocation}</p>
-							</div>
-							<h2 className='print-event-title'>{events[0].printForm.eventTitle}</h2>
-							<div className='print-event-time-pace-wrapper'>
-								<p className='print-event-finish-time'>Official finish time:<br /> <b><span>{events[0].printForm.officialFinishTime}</span></b></p>
-								<p className='print-event-event-pace'>Pace:<br />  <b><span>{`${events[0].printForm.eventPace}min/km`}</span></b></p>
+								<div className='event-time-pace-wrapper'>
+									<div className='event-finish-time-block'>
+										<p className='event-finish-time'>{events[0].printForm.officialFinishTime}</p>
+										<p className='event-finish-time-title'>Finish time</p>
+									</div>
+									<div className='event-event-pace-block'>
+										<p className='event-event-pace'>{events[0].printForm.eventPace}</p>
+										<p className='event-event-pace-title'>Pace</p>
+									</div>
+								</div>
 							</div>
 							<div className='print-event-pictures-wrap'>
 								<div className='print-event-pictures-block-1'>
-									<p className='print-event-pictures-title'>My pictures:</p>
 									<div className='print-event-picture'>
 										<ModalImage
 											small={events[0].picture1}
@@ -72,7 +84,6 @@ function PrintEventCard() {
 									</div>
 								</div>
 								<div className='print-event-pictures-block-2'>
-									<p className='print-event-track-title'>My track:</p>
 									<div className='print-event-track-picture'>
 										<ModalImage
 											small={events[0].trackPicture}
@@ -88,7 +99,6 @@ function PrintEventCard() {
 								</div>
 								<div className='print-event-pictures-block-3'>
 									<div className='print-event-medal-block'>
-										<p className='print-event-medal-title'>My medal:</p>
 										<div className='print-event-medal-picture'>
 											<ModalImage
 												small={events[0].medalPicture}
@@ -97,7 +107,6 @@ function PrintEventCard() {
 										</div>
 									</div>
 									<div className='print-event-bib-block'>
-										<p className='print-event-bib-title'>My bib:</p>
 										<div className='print-event-bib-picture'>
 											<ModalImage
 												small={events[0].bibPicture}
@@ -107,13 +116,16 @@ function PrintEventCard() {
 									</div>
 								</div>
 							</div>
-							<p className='print-event-comments'>{`Comments:`} <b><span>{events[0].printForm.eventComments}</span></b></p>
+
+							<p className='print-event-comments'>{events[0].printForm.eventComments}</p>
+
 						</li >
 					</div>
 					<div className='print-share-and-print-buttons'>
 						<button className='download-delete-button' type='button' onClick={() => handleDeleteEvent()}><DeleteButton buttonText="Delete"></DeleteButton></button>
 						<button className='download-image-button' type='button' onClick={downloadImage}><PrintButton buttonText="Download as JPG" /></button>
 					</div>
+					<p className='sport-events-title'>More events are coming soon...</p>
 				</div>
 			)
 			}
