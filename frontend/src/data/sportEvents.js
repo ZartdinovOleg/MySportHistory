@@ -16,6 +16,7 @@ const sportEvents = [
 			// './images/olegzartdinov/1_halong/halong_medal.jpeg',
 			// './images/olegzartdinov/1_halong/halong_bib.jpeg'
 		],
+		eventNavMedal: './images/olegzartdinov/1_halong/halong_nav_medal.png',
 		eventComments: 'Unbelievably hot and humidity race I ever joined. First ever full marathon. Ran two weeks after Covid.',
 		isFirstEvent: true,
 		isPersonalBest: false
@@ -36,6 +37,7 @@ const sportEvents = [
 			'./images/olegzartdinov/2_vihm2023/vihm2023_medal.jpeg',
 			'./images/olegzartdinov/2_vihm2023/vihm2023_bib.jpeg',
 		],
+		eventNavMedal: './images/olegzartdinov/2_vihm2023/vihm2023_nav_medal.jpg',
 		eventComments: 'Best way to meet New Year. Start at 5:00am',
 		isFirstEvent: true,
 		isPersonalBest: true
@@ -56,6 +58,7 @@ const sportEvents = [
 			'./images/olegzartdinov/3_th2023/th2023_medal.jpeg',
 			'./images/olegzartdinov/3_th2023/th2023_bib.jpeg',
 		],
+		eventNavMedal: './images/olegzartdinov/3_th2023/th2023_nav_medal.jpeg',
 		eventComments: 'Round around Tay Ho lake. Very hot',
 		isFirstEvent: true,
 		isPersonalBest: true
@@ -140,6 +143,7 @@ const sportEvents = [
 			'./images/olegzartdinov/4_sh2023/sh2023_medal.jpeg',
 			'./images/olegzartdinov/4_sh2023/sh2023_bib.jpeg',
 		],
+		eventNavMedal: './images/olegzartdinov/4_sh2023/sh2023_nav_medal.jpeg',
 		eventComments: 'Local start in Ciputra Area. The distance was shorter for sure',
 		isFirstEvent: true,
 		isPersonalBest: true
@@ -160,6 +164,7 @@ const sportEvents = [
 			'./images/olegzartdinov/5_vihm2024/vihm2024_medal.jpeg',
 			'./images/olegzartdinov/5_vihm2024/vihm2024_bib.jpeg'
 		],
+		eventNavMedal: './images/olegzartdinov/5_vihm2024/vihm2024_nav_medal.jpg',
 		eventComments: 'So crazy to get extra 500m at the end',
 		isFirstEvent: true,
 		isPersonalBest: true
@@ -181,6 +186,7 @@ const sportEvents = [
 			'./images/olegzartdinov/6_hk2024/hk2024_medal.jpeg',
 			'./images/olegzartdinov/6_hk2024/hk2024_bib.jpeg',
 		],
+		eventNavMedal: './images/olegzartdinov/6_hk2024/hk2024_nav_medal.jpeg',
 		eventComments: 'My first serious marathon. Over 74k participants. Crazy elevation gain',
 		isFirstEvent: false,
 		isPersonalBest: true
@@ -201,6 +207,7 @@ const sportEvents = [
 			'./images/olegzartdinov/7_hb2024/hb2024_medal.jpeg',
 			'./images/olegzartdinov/7_hb2024/hb2024_bib.jpeg',
 		],
+		eventNavMedal: './images/olegzartdinov/7_hb2024/hb2024_nav_medal.jpeg',
 		eventComments: 'First 10k race',
 		isFirstEvent: true,
 		isPersonalBest: true
@@ -249,6 +256,7 @@ const sportEvents = [
 			'./images/olegzartdinov/8_vh2024/vh2024_medal.jpg',
 			'./images/olegzartdinov/8_vh2024/vh2024_bib.png',
 		],
+		eventNavMedal: './images/olegzartdinov/8_vh2024/vh2024_nav_medal.jpg',
 		eventComments: 'First race after the injury',
 		isFirstEvent: true,
 		isPersonalBest: true
@@ -269,6 +277,7 @@ const sportEvents = [
 			'./images/olegzartdinov/9_dar2024/dar2024_medal.png',
 			'./images/olegzartdinov/9_dar2024/dar2024_bib.png',
 		],
+		eventNavMedal: './images/olegzartdinov/9_dar2024/dar2024_nav_medal.png',
 		eventComments: 'Local 5 years club celebration start',
 		isFirstEvent: true,
 		isPersonalBest: true
@@ -289,6 +298,7 @@ const sportEvents = [
 			'./images/olegzartdinov/10_vihm2025/vihm2025_medal.png',
 			'./images/olegzartdinov/10_vihm2025/vihm2025_bib.png',
 		],
+		eventNavMedal: './images/olegzartdinov/10_vihm2025/vihm2025_nav_medal.png',
 		eventComments: 'Third year start at 5:00am',
 		isFirstEvent: true,
 		isPersonalBest: true
@@ -309,6 +319,7 @@ const sportEvents = [
 			'./images/olegzartdinov/11_tet2025/tet2025_medal.png',
 			'./images/olegzartdinov/11_tet2025/tet2025_bib.png',
 		],
+		eventNavMedal: './images/olegzartdinov/11_tet2025/tet2025_nav_medal.png',
 		eventComments: 'New personal best in terrible air quality',
 		isFirstEvent: true,
 		isPersonalBest: true
@@ -329,10 +340,32 @@ const sportEvents = [
 			'./images/olegzartdinov/12_hk2025/hk2025_medal.png',
 			'./images/olegzartdinov/12_hk2025/hk2025_bib.png',
 		],
+		eventNavMedal: './images/olegzartdinov/12_hk2025/hk2025_nav_medal.png',
 		eventComments: 'Returned back to Hong Kong for new personal best',
 		isFirstEvent: true,
 		isPersonalBest: true
 	},
+	{
+		eventId: 13,
+		eventTitle: 'VNEXPRESS Volvo Half Marathon 2025',
+		eventData: '20 April 2025',
+		eventLocation: 'Hanoi, Vietnam',
+		eventType: 'running',
+		officialDistance: '21.1',
+		officialFinishTime: '1:48:32',
+		eventPace: '5:09',
+		eventPictures: ['./images/olegzartdinov/13_vas2025/vas2025_picture1.jpg',
+			'./images/olegzartdinov/13_vas2025/vas2025_picture2.jpg',
+			'./images/olegzartdinov/13_vas2025/vas2025_picture3.jpg',
+			'./images/olegzartdinov/13_vas2025/vas2025_track.jpg',
+			'./images/olegzartdinov/13_vas2025/vas2025_medal.png',
+			'./images/olegzartdinov/13_vas2025/vas2025_bib.png',
+		],
+		eventNavMedal: './images/olegzartdinov/13_vas2025/vas2025_nav_medal.png',
+		eventComments: 'Very hot race with 2 hours qualification time',
+		isFirstEvent: true,
+		isPersonalBest: true
+	}
 ]
 
 export default sportEvents

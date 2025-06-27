@@ -145,15 +145,15 @@ function PrintEventForm() {
 							<input required type='text' id='eventPace' placeholder='4:19' value={printForm.eventPace} onChange={(e) => setPrintForm({ ...printForm, eventPace: e.target.value })} />
 						</div>
 					</div>
-					<div className='print-event-upload-wrap'>
+					{/* <div className='print-event-upload-wrap'>
 						<p className='print-event-upload-title'>Upload your photos</p>
 						<div className='print-form-dropzone'>
 							<IoCloudUploadOutline className='print-form-dropzone-icon' />
 							<p className='print-form-dropzone-title'>Click or drag and drop your photos</p>
 						</div>
-					</div>
+					</div> */}
 
-					{/* 
+
 					<div className='print-event-pictures-wrapper'>
 						<div className='print-event-pictures-column'>
 							<div className='print-event-picture-wrap'>
@@ -229,7 +229,7 @@ function PrintEventForm() {
 							</div>
 
 						</div>
-					</div> */}
+					</div>
 
 					<div className='print-event-comment-wrap'>
 						<label htmlFor='eventComments'>Comment</label>
